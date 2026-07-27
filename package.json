@@ -1,0 +1,17 @@
+{
+  "name": "show-scanner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daily radar for tour dates near Venice, CA from your favorite bands.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "scan": "node scripts/run-scan.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

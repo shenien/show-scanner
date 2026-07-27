@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show Scanner — JARVIS</title>
+<meta name="description" content="Daily radar for tour dates near Venice, CA from your favorite bands.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='%23000000'/%3E%3Ccircle cx='50' cy='50' r='34' fill='none' stroke='%23c8a44f' stroke-width='3'/%3E%3Ccircle cx='50' cy='50' r='18' fill='none' stroke='%23c8a44f' stroke-width='2' opacity='0.6'/%3E%3Ccircle cx='50' cy='50' r='6' fill='%23c8a44f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="aurora">
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="blob blob-c"></div>
+</div>
+<div class="vignette"></div>
+<div class="spotlight"></div>
+
+<div class="wrap">
+
+  <header class="hud">
+    <div class="hud-left">
+      <a href="https://jarvis-9dhy.onrender.com" class="back-link">← JARVIS</a>
+      <div class="hud-divider"></div>
+      <div class="mark-text">
+        <span class="mark-title">SHOW SCANNER</span>
+        <span class="mark-sub">tour radar · venice, ca</span>
+      </div>
+    </div>
+
+    <div class="hud-right">
+      <div class="status">
+        <span class="status-dot" id="statusDot"></span>
+        <span class="status-label" id="statusLabel">—</span>
+      </div>
+      <button class="scan-btn" id="scanBtn">Scan now</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="greeting">
+      <h1>Upcoming shows.</h1>
+      <p class="greeting-sub" id="scanMeta">Loading last scan…</p>
+    </section>
+
+    <section class="grid" id="showGrid">
+      <!-- show cards injected by app.js -->
+    </section>
+
+    <section class="bands-section">
+      <h2>Your bands</h2>
+      <p class="bands-sub">Show Scanner checks these every morning for shows within 50 miles of Venice, CA.</p>
+
+      <div class="band-chips" id="bandChips">
+        <!-- band chips injected by app.js -->
+      </div>
+
+      <form class="add-band-form" id="addBandForm">
+        <input id="addBandInput" type="text" placeholder="Add a band…" autocomplete="off" spellcheck="false">
+        <button type="submit">Add</button>
+      </form>
+      <p class="form-error" id="formError"></p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Part of JARVIS · Built &amp; maintained by Shereef</span>
+    <span class="foot-dim">v1.0</span>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

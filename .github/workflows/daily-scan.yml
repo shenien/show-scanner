@@ -1,0 +1,33 @@
+name: Daily Show Scan
+
+on:
+  schedule:
+    # 14:00 UTC ≈ 7am PDT / 6am PST. GitHub Actions cron doesn't shift for
+    # daylight saving, so this drifts an hour twice a year — fine for a
+    # "check every morning" job.
+    - cron: "0 14 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: npm run scan
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+
+      - name: Commit updated show data
+        run: |
+          git config user.name "show-scanner-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/shows.json
+          git diff --staged --quiet || git commit -m "Daily scan: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
