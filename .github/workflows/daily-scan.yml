@@ -2,10 +2,12 @@ name: Daily Show Scan
 
 on:
   schedule:
-    # 14:00 UTC ≈ 7am PDT / 6am PST. GitHub Actions cron doesn't shift for
-    # daylight saving, so this drifts an hour twice a year — fine for a
-    # "check every morning" job.
-    - cron: "0 14 * * *"
+    # 14:17 UTC ≈ 7:17am PDT / 6:17am PST. GitHub Actions cron doesn't shift
+    # for daylight saving, so this drifts an hour twice a year — fine for a
+    # "check every morning" job. Deliberately off the hour: GitHub's own docs
+    # warn that schedules pinned to :00 queue behind every other repo's
+    # top-of-the-hour cron and can be delayed or dropped under load.
+    - cron: "17 14 * * *"
   workflow_dispatch: {}
 
 jobs:
