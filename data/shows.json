@@ -1,5 +1,5 @@
 {
-  "lastScanned": "2026-08-31T20:04:54.502Z",
+  "lastScanned": "2026-09-01T17:49:18.788Z",
   "radiusMiles": 50,
   "origin": {
     "lat": 33.985,
@@ -7,18 +7,6 @@
     "label": "Venice, CA"
   },
   "shows": [
-    {
-      "band": "Muse",
-      "date": "2026-08-31",
-      "time": "19:00:00",
-      "venue": "Hollywood Bowl",
-      "city": "Hollywood",
-      "state": "CA",
-      "distanceMiles": 11.5,
-      "image": "https://s1.ticketm.net/dam/a/859/993be3f1-1847-44ee-8998-ad2aebcfc859_SOURCE",
-      "ticketUrl": "https://www.stubhub.com/find/s/?q=Muse%20Hollywood",
-      "sourceUrl": "https://www.ticketmaster.com/muse-the-wow-signal-tour-hollywood-california-08-31-2026/event/0B006479D65B4FA1"
-    },
     {
       "band": "Guns N' Roses",
       "date": "2026-09-05",
@@ -41,7 +29,7 @@
     {
       "name": "Muse",
       "found": true,
-      "eventCount": 1
+      "eventCount": 0
     },
     {
       "name": "Dave Matthews Band",
