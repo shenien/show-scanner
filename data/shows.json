@@ -1,25 +1,12 @@
 {
-  "lastScanned": "2026-09-05T16:49:35.501Z",
+  "lastScanned": "2026-09-06T17:02:53.987Z",
   "radiusMiles": 50,
   "origin": {
     "lat": 33.985,
     "lon": -118.4695,
     "label": "Venice, CA"
   },
-  "shows": [
-    {
-      "band": "Guns N' Roses",
-      "date": "2026-09-05",
-      "time": "18:25:00",
-      "venue": "Rose Bowl",
-      "city": "Pasadena",
-      "state": "CA",
-      "distanceMiles": 21.2,
-      "image": "https://s1.ticketm.net/dam/a/ff0/bfc0ce5a-c7ad-4584-a30e-795584aeeff0_SOURCE",
-      "ticketUrl": "https://www.stubhub.com/find/s/?q=Guns%20N'%20Roses%20Pasadena",
-      "sourceUrl": "https://www.ticketmaster.com/guns-n-roses-world-tour-2026-pasadena-california-09-05-2026/event/0B006375B6DA8A5E"
-    }
-  ],
+  "shows": [],
   "bandsStatus": [
     {
       "name": "Incubus",
@@ -49,7 +36,7 @@
     {
       "name": "Guns N' Roses",
       "found": true,
-      "eventCount": 1
+      "eventCount": 0
     },
     {
       "name": "AC/DC",
