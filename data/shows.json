@@ -1,5 +1,5 @@
 {
-  "lastScanned": "2026-09-09T17:50:18.627Z",
+  "lastScanned": "2026-09-10T17:49:11.538Z",
   "radiusMiles": 50,
   "origin": {
     "lat": 33.985,
@@ -10,33 +10,33 @@
   "bandsStatus": [
     {
       "name": "Incubus",
-      "found": true,
-      "eventCount": 0
+      "found": false,
+      "error": "Ticketmaster attractions 429"
     },
     {
       "name": "Muse",
-      "found": true,
-      "eventCount": 0
+      "found": false,
+      "error": "Ticketmaster attractions 429"
     },
     {
       "name": "Dave Matthews Band",
-      "found": true,
-      "eventCount": 0
+      "found": false,
+      "error": "Ticketmaster attractions 429"
     },
     {
       "name": "Tool",
-      "found": true,
-      "eventCount": 0
+      "found": false,
+      "error": "Ticketmaster attractions 429"
     },
     {
       "name": "Metallica",
-      "found": true,
-      "eventCount": 0
+      "found": false,
+      "error": "Ticketmaster attractions 504"
     },
     {
       "name": "Guns N' Roses",
-      "found": true,
-      "eventCount": 0
+      "found": false,
+      "error": "Ticketmaster attractions 504"
     },
     {
       "name": "AC/DC",
