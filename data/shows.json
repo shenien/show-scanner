@@ -1,12 +1,25 @@
 {
-  "lastScanned": "2026-10-27T19:26:00.961Z",
+  "lastScanned": "2026-10-28T19:33:53.864Z",
   "radiusMiles": 50,
   "origin": {
     "lat": 33.985,
     "lon": -118.4695,
     "label": "Venice, CA"
   },
-  "shows": [],
+  "shows": [
+    {
+      "band": "Foo Fighters",
+      "date": "2026-12-12",
+      "time": "17:30:00",
+      "venue": "Kia Forum",
+      "city": "Inglewood",
+      "state": "CA",
+      "distanceMiles": 7.5,
+      "image": "https://s1.ticketm.net/dam/a/bc0/8341ed56-92be-4c3a-a4d2-7f1e76f09bc0_SOURCE",
+      "ticketUrl": "https://www.stubhub.com/find/s/?q=Foo%20Fighters%20Inglewood",
+      "sourceUrl": "https://www.ticketmaster.com/kroq-almost-acoustic-christmas-inglewood-california-12-12-2026/event/0900655BD381EF41"
+    }
+  ],
   "bandsStatus": [
     {
       "name": "Incubus",
@@ -46,7 +59,7 @@
     {
       "name": "Foo Fighters",
       "found": true,
-      "eventCount": 0
+      "eventCount": 1
     },
     {
       "name": "Kygo",
